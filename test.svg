@@ -1,0 +1,20 @@
+<svg width="200" height="200">
+  <foreignObject x="10" y="10" width="180" height="180">
+    <body xmlns="http://www.w3.org/1999/xhtml">
+      <form id="svgForm">
+        <input type="text" name="username" value="User123" />
+        <input type="password" name="password" value="Pass123" />
+      </form>
+    </body>
+  </foreignObject>
+</svg>
+
+// JavaScript to access form inputs inside SVG
+const svgForm = document.querySelector('#svgForm');
+const formData = Array.from(svgForm.elements).reduce((acc, element) => {
+  acc[element.name] = element.value;
+  return acc;
+}, {});
+
+// Log form data
+console.log(formData);
