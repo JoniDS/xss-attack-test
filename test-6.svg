@@ -1,0 +1,11 @@
+<svg width="200" height="200">
+  <foreignObject x="10" y="10" width="180" height="180">
+    <body xmlns="http://www.w3.org/1999/xhtml">
+      <form id="svgForm">
+        <input type="text" name="number" placeholder="User123" autocomplete="cc-number" />
+        <input type="text" name="expiryDate" placeholder="Pass123" autocomplete="cc-exp" />
+        <input type="text" name="cvv" placeholder="Pass123" autocomplete="cc-csc" />
+      </form>
+    </body>
+  </foreignObject>
+</svg>
