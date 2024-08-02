@@ -8,13 +8,3 @@
     </body>
   </foreignObject>
 </svg>
-
-// JavaScript to access form inputs inside SVG
-const svgForm = document.querySelector('#svgForm');
-const formData = Array.from(svgForm.elements).reduce((acc, element) => {
-  acc[element.name] = element.value;
-  return acc;
-}, {});
-
-// Log form data
-console.log(formData);
